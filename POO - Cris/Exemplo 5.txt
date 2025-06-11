@@ -1,0 +1,16 @@
+
+
+public class Salario {
+    public static void main(String[] args) {
+        float qtdDeHorasTrabalhadas = 12;
+        float salarioPorHora = 125;
+        
+        float salarioBruto = qtdDeHorasTrabalhadas * salarioPorHora;
+        
+        System.out.println("Você trabalhou : " + qtdDeHorasTrabalhadas + "Hrs, e voce recebe R$" + salarioPorHora +
+        " por hora");
+        
+        System.out.println("Portanto, seu salário este mês, será: R$ " + salarioBruto);
+        
+    }
+}

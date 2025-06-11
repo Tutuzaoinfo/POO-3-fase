@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Estado Civil: C - Casado S - Solteiro D - Divorciado V - Viúvo: ");
+		System.out.print("Escolha seu Estado Civil: ");
+		Scanner entrada = new Scanner(System.in);
+		String estadocivil = entrada.nextLine();
+		
+		if (estadocivil.equalsIgnoreCase("C"))
+		{
+		    System.out.print("Casado");
+		}
+		else if (estadocivil.equalsIgnoreCase("S")){
+		    System.out.print("Solteiro");
+		}
+		else if (estadocivil.equalsIgnoreCase("D")){
+		    System.out.print("Divorciado");
+		}
+		else if (estadocivil.equalsIgnoreCase("V")){
+		    System.out.print("Viúvo");
+		}
+		else{
+		    System.out.print("Estado civil Inválido");
+		}
+		}
+	}

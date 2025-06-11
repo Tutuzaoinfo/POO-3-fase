@@ -1,0 +1,19 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+	    double celsius, fah, kelvin, re, ra;
+	    
+	    celsius = 30;
+	    
+	    fah = celsius * 1.8 + 32;
+	    kelvin = celsius + 273.15;
+	    re = celsius * 0.8;
+	    ra = celsius * 1.8 + 32 + 459.67;
+	    
+		System.out.println("Fahrenheit : " + fah);
+		System.out.println("Kelvin     : " + kelvin);
+		System.out.println("Réamour    : " + re);
+		System.out.println("Rankine    : " + ra);
+	}
+}

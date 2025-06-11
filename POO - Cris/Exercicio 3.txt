@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		int total, qtde;
+		System.out.print("Quantos alunos serão cadastrados ? ");
+		total = entrada.nextInt();
+		
+		for(qtde=1; qtde <= total; qtde++)
+		{
+		Scanner alunos = new Scanner(System.in);
+		String nome,disciplina;
+		double nota1=0,nota2=0,media=0;
+		System.out.print("Digite nome: ");
+		nome = alunos.nextLine();
+		System.out.print("Digite primeira nota: ");
+		nota1 = alunos.nextDouble();
+		System.out.print("Digite segunda nota: ");
+		nota2 = alunos.nextDouble();
+		media = (nota1 + nota2) / 2;
+		System.out.println("Media Final: " + media);
+		if (media < 5) {
+		    System.out.println("O aluno "+nome+" foi reprovado");
+		}
+		else if ((media >= 5) && (media < 7)){
+		    System.out.println("O aluno "+nome+" está em recuperação" +nome);
+		}
+		else {
+		    System.out.println("O aluno "+nome+" foi aprovado");
+		}
+		    
+		}
+	}
+}

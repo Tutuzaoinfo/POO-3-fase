@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Escolha seu curso ADM ou DIR ou CEX: ");
+		    Scanner entrada = new Scanner(System.in);
+		    String curso = entrada.nextLine();
+		    
+		switch (curso) {
+		    case "ADM" :
+		  System.out.print("Admnistração");
+		        break;
+		    case "DIR" :
+		  System.out.print("Direito");
+		        break;
+		    case "CEX" :
+		  System.out.print("Comércio Exterior");
+		        break;
+		    default:
+		  System.out.print("Curso não informado");
+		        break;
+		}
+	}
+}
